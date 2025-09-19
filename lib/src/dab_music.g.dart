@@ -375,12 +375,12 @@ Map<String, dynamic> _$DiscographyResponseToJson(
 
 StreamResponse _$StreamResponseFromJson(Map<String, dynamic> json) =>
     StreamResponse(
-      streamUrl: json['streamUrl'] as String?,
+      url: json['url'] as String?,
     );
 
 Map<String, dynamic> _$StreamResponseToJson(StreamResponse instance) =>
     <String, dynamic>{
-      'streamUrl': instance.streamUrl,
+      'url': instance.url,
     };
 
 LyricsResponse _$LyricsResponseFromJson(Map<String, dynamic> json) =>

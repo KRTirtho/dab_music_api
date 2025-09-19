@@ -698,12 +698,12 @@ class DiscographyResponse {
 @JsonSerializable()
 class StreamResponse {
   const StreamResponse({
-    this.streamUrl,
+    this.url,
   });
   
   factory StreamResponse.fromJson(Map<String, Object?> json) => _$StreamResponseFromJson(json);
   
-  final String? streamUrl;
+  final String? url;
 
   Map<String, Object?> toJson() => _$StreamResponseToJson(this);
 }
